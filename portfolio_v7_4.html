@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>邱澤（Qiu Ze）- WEB Marketing / WEB Design | Portfolio</title>
+<meta name="description" content="邱澤（きゅうたく）のポートフォリオ。拓殖大学中国語学科在学中。日中バイリンガル・Adobe Illustrator・ウェブマーケティングインターン経験。">
+<meta name="author" content="邱澤 Qiu Ze">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="邱澤（きゅうたく）- WEBマーケティング / WEBデザイン | ポートフォリオ">
+<meta property="og:description" content="日中バイリンガル・ウェブマーケティングインターン経験を持つ大学生のポートフォリオ。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<!-- TODO: サーバーアップ後に実際のURLに差し替え -->
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/og-image.jpg">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>邱</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"邱澤","alternateName":"きゅうたく","jobTitle":"WEBマーケティング / WEBデザイン志望","email":"ryuutaku7@gmail.com","birthDate":"2005-04-21","nationality":"中国","address":{"@type":"PostalAddress","addressLocality":"東京","addressCountry":"JP"},"alumniOf":{"@type":"CollegeOrUniversity","name":"拓殖大学","department":"外国語学部中国語学科"},"knowsLanguage":["日本語","中国語","英語"],"hasCredential":"英検準2級","seeks":"WEBマーケティング・WEBデザイン職"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"なぜWEBマーケティングを目指しているのですか？","acceptedAnswer":{"@type":"Answer","text":"Illustratorでアイキャッチ画像を制作した経験から、デザインが人の行動に影響を与えることに面白さを感じました。"}},
+{"@type":"Question","name":"中国語はどのくらい話せますか？","acceptedAnswer":{"@type":"Answer","text":"両親が中国人で、中学2年時に河南省の少林寺武術学校に4ヶ月間留学した経験があります。"}},
+{"@type":"Question","name":"将来どんなキャリアを描いていますか？","acceptedAnswer":{"@type":"Answer","text":"まずはWEBマーケティングの実務経験を積み、データ分析とクリエイティブの両方を扱えるマーケターになりたい。"}},
+{"@type":"Question","name":"チームで働くときの強みは？","acceptedAnswer":{"@type":"Answer","text":"幼少期から目上の方と話す機会が多く、年齢や立場を問わずコミュニケーションが取れることが強みです。"}}
+]}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--bg:#f5f7fc;--bg-card:#fff;--border:#dde4f0;--blue:#1a2d5a;--blue-light:#2a4380;--blue-muted:#b8c8e0;--accent:#3d5a99;--text:#1a2d5a;--text-muted:#7088b4;--nav-height:64px;--bg-alt:#edf0f9;--ease:cubic-bezier(.22,1,.36,1);}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP','DM Sans',-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;}
+
+/* ANIMATIONS */
+.fi{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);}.fi.v{opacity:1;transform:translateY(0);}
+.fi-d1{transition-delay:.15s;}.fi-d2{transition-delay:.3s;}.fi-d3{transition-delay:.45s;}
+#home .home-numbers{opacity:0;transform:translateX(-40px);animation:sL 1s var(--ease) .2s forwards;}
+#home .home-tagline{opacity:0;transform:translateX(40px);animation:sR 1s var(--ease) .5s forwards;}
+#home .home-btn{opacity:0;animation:fU .8s var(--ease) .9s forwards;}
+@keyframes sL{to{opacity:1;transform:translateX(0);}}
+@keyframes sR{to{opacity:1;transform:translateX(0);}}
+@keyframes fU{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.strength-row.v .str-icon svg{animation:iPop .6s var(--ease) .2s both;}
+@keyframes iPop{from{opacity:0;transform:scale(.7);}to{opacity:1;transform:scale(1);}}
+.timeline-item.v .timeline-dot{animation:dP .5s var(--ease) .1s both;}
+@keyframes dP{from{transform:scale(0);}60%{transform:scale(1.4);}to{transform:scale(1);}}
+.project-card.v .project-number{animation:nS .7s var(--ease) .1s both;}
+@keyframes nS{from{opacity:0;transform:translateX(-10px);}to{opacity:.06;transform:translateX(0);}}
+@keyframes scP{0%,100%{opacity:.4;}50%{opacity:1;}}
+
+/* NAVBAR */
+header nav{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:rgba(245,247,252,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 40px;z-index:100;transition:box-shadow .3s;}
+header nav.scrolled{box-shadow:0 2px 20px rgba(26,45,90,.06);}
+.nav-logo{font-size:17px;font-weight:800;color:var(--blue);letter-spacing:.18em;text-decoration:none;font-family:'Shippori Mincho',serif;font-style:italic;}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none;}
+.nav-links a{font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 14px;border-radius:6px;transition:color .2s,background .2s;font-weight:500;}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:rgba(26,45,90,.06);}
+.nav-right{display:flex;align-items:center;gap:12px;}
+.lang-toggle{display:flex;background:var(--bg-card);border:1px solid var(--border);border-radius:6px;overflow:hidden;}
+.lang-btn{font-size:11px;font-family:'DM Sans',sans-serif;font-weight:500;padding:5px 14px;color:var(--text-muted);cursor:pointer;transition:all .2s;border:none;background:transparent;}
+.lang-btn.active{background:var(--blue);color:#fff;}
+.nav-cta{display:inline-flex;align-items:center;gap:6px;padding:8px 20px;background:var(--blue);color:#fff;font-size:12px;font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.08em;border-radius:6px;text-decoration:none;transition:all .3s var(--ease);white-space:nowrap;}
+.nav-cta:hover{background:var(--blue-light);transform:translateY(-1px);box-shadow:0 4px 12px rgba(26,45,90,.25);}
+.nav-cta svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text-muted);border-radius:1px;transition:all .3s;}
+nav.mobile-menu{display:none;position:fixed;top:var(--nav-height);left:0;right:0;background:rgba(245,247,252,.98);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:20px 40px;z-index:99;flex-direction:column;gap:4px;}
+nav.mobile-menu.open{display:flex;}
+nav.mobile-menu a{font-size:15px;color:var(--text-muted);text-decoration:none;padding:14px 0;border-bottom:1px solid var(--border);transition:color .2s;font-weight:500;}
+nav.mobile-menu a:last-child{border-bottom:none;}
+nav.mobile-menu a:hover{color:var(--text);}
+.mobile-cta-bar{display:none;position:fixed;bottom:0;left:0;right:0;padding:12px 20px;background:rgba(245,247,252,.95);backdrop-filter:blur(12px);border-top:1px solid var(--border);z-index:90;text-align:center;}
+.mobile-cta-bar a{display:block;padding:14px;background:var(--blue);color:#fff;font-size:14px;font-weight:600;border-radius:8px;text-decoration:none;letter-spacing:.06em;}
+
+.scroll-indicator{position:absolute;bottom:32px;left:10%;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:hFadeUp .6s var(--ease) 1.5s forwards;}
+.scroll-indicator span{font-size:10px;font-family:'DM Sans',sans-serif;letter-spacing:.15em;color:var(--text-muted);writing-mode:vertical-rl;}
+.scroll-line{width:1px;height:36px;background:linear-gradient(to bottom,var(--blue-muted),transparent);animation:scP 2s ease-in-out 2s infinite;}
+
+/* SECTIONS & TITLE HIERARCHY */
+section{padding:100px 10%;border-bottom:1px solid var(--border);}
+section:last-of-type{border-bottom:none;}
+.sec-heading-en{font-size:12px;font-family:'DM Sans',sans-serif;font-weight:600;color:var(--accent);letter-spacing:.3em;text-transform:uppercase;margin-bottom:8px;display:block;}
+.sec-heading{font-size:clamp(28px,4vw,40px);font-weight:700;color:var(--blue);letter-spacing:.02em;margin-bottom:16px;line-height:1.3;}
+.sec-divider{width:40px;height:3px;background:linear-gradient(90deg,var(--blue),var(--accent));border-radius:2px;margin-bottom:48px;}
+.sub-heading-en{font-size:11px;font-family:'DM Sans',sans-serif;font-weight:600;color:var(--text-muted);letter-spacing:.25em;text-transform:uppercase;margin-bottom:4px;display:block;}
+.sub-heading{font-size:20px;font-weight:600;color:var(--text);margin-bottom:8px;}
+.sub-divider{width:24px;height:2px;background:var(--blue-muted);border-radius:1px;margin-bottom:32px;}
+
+/* HOME */
+#home{min-height:100vh;display:flex;align-items:center;padding:calc(var(--nav-height) + 48px) 10% 80px;position:relative;overflow:hidden;background:#fff;}
+.home-inner{width:100%;position:relative;z-index:1;}
+.h-gpa{font-size:22px;font-family:'Syne',sans-serif;font-weight:700;color:var(--accent);letter-spacing:.5em;text-transform:uppercase;padding:16px 0;}
+.h-nums{display:flex;align-items:center;gap:12px;padding:12px 0 8px;}
+.h-low{font-size:clamp(72px,12vw,148px);font-weight:800;font-family:'Syne',sans-serif;color:rgba(26,45,90,.22);line-height:.9;letter-spacing:-.04em;}
+.h-arr{font-size:clamp(48px,8vw,96px);font-weight:800;font-family:'Syne',sans-serif;color:rgba(26,45,90,.35);line-height:.9;}
+.h-high{font-size:clamp(72px,12vw,148px);font-weight:800;font-family:'Syne',sans-serif;color:var(--blue);line-height:.9;letter-spacing:-.04em;}
+.h-tagline{font-size:clamp(22px,3.5vw,48px);font-weight:700;font-style:italic;font-family:'Playfair Display',serif;color:var(--blue);line-height:1.25;letter-spacing:.01em;padding:24px 0 28px;}
+.h-footer{display:flex;align-items:center;gap:14px;padding:20px 0;}
+.h-btn-circle{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:2px solid var(--blue);border-radius:50%;color:var(--blue);text-decoration:none;animation:hBounce 1.5s var(--ease) infinite;transition:all .3s var(--ease);}
+.h-btn-circle:hover{background:var(--blue);color:#fff;}
+.h-btn-circle svg{width:20px;height:20px;}
+.h-btn-label{font-size:14px;font-weight:700;color:var(--blue);letter-spacing:.12em;font-family:'Noto Sans JP',sans-serif;}
+@keyframes hBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+/* Ghost 3.50 */
+.h-ghost-high{position:absolute;pointer-events:none;user-select:none;z-index:0;font-size:clamp(72px,12vw,148px);font-weight:800;font-family:'Syne',sans-serif;line-height:.9;letter-spacing:-.04em;color:var(--blue);opacity:0;}
+/* Entrance animations */
+.h-gpa{opacity:0;animation:hFadeUp .6s var(--ease) .25s forwards;}
+.h-nums{opacity:0;animation:hFadeUp .7s var(--ease) .45s forwards;}
+.h-tagline{opacity:0;animation:hFadeUp .7s var(--ease) .85s forwards;}
+.h-footer{opacity:0;animation:hFadeUp .6s var(--ease) 1.15s forwards;}
+@keyframes hFadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+
+/* INTRODUCTION */
+#introduction{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 10%;}
+.intro-heading{font-size:clamp(32px,5vw,48px);font-weight:700;color:var(--blue);margin-bottom:12px;}
+.intro-divider{width:48px;height:3px;background:linear-gradient(90deg,var(--blue),var(--accent));border-radius:2px;margin:0 auto 48px;}
+.intro-text{font-size:clamp(16px,2vw,19px);color:var(--text);line-height:2.4;max-width:720px;margin:0 auto;}
+.intro-future{margin-top:40px;font-size:15px;color:var(--text-muted);line-height:2;max-width:640px;margin-left:auto;margin-right:auto;padding-top:32px;border-top:1px solid var(--border);}
+
+/* ABOUT */
+.about-top{display:flex;align-items:center;gap:60px;margin-bottom:80px;}
+.avatar{width:160px;height:160px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--accent));flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:48px;color:#fff;overflow:hidden;box-shadow:0 8px 32px rgba(26,45,90,.15);}
+.avatar img{width:100%;height:100%;object-fit:cover;}
+.about-name{font-size:36px;font-weight:600;color:var(--text);letter-spacing:.05em;margin-bottom:4px;}
+.about-yomi{font-size:13px;color:var(--text-muted);letter-spacing:.15em;margin-bottom:20px;}
+.about-text{font-size:15px;color:var(--text);line-height:2;}
+
+/* STRENGTHS 1-col */
+.strength-row{display:flex;align-items:center;gap:48px;padding:40px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;margin-bottom:24px;transition:transform .4s var(--ease),box-shadow .4s var(--ease);position:relative;overflow:hidden;}
+.strength-row::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--blue),var(--accent));opacity:0;transition:opacity .4s;}
+.strength-row:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(26,45,90,.1);}
+.strength-row:hover::before{opacity:1;}
+.strength-row:last-child{margin-bottom:0;}
+.str-icon{width:180px;height:140px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(26,45,90,.03),rgba(61,90,153,.06));border-radius:12px;position:relative;}
+.str-icon::after{content:'';position:absolute;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(61,90,153,.06),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);}
+.str-icon svg{width:100px;height:100px;position:relative;z-index:1;}
+.str-body{flex:1;}
+.str-title{font-size:20px;font-weight:700;color:var(--text);margin-bottom:10px;}
+.str-desc{font-size:14px;color:var(--text-muted);line-height:1.9;}
+
+/* TIMELINE */
+.timeline{position:relative;padding-left:40px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--border);}
+.timeline-item{position:relative;margin-bottom:48px;}.timeline-item:last-child{margin-bottom:0;}
+.timeline-dot{position:absolute;left:-40px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid var(--bg);box-shadow:0 0 0 1px var(--border);transition:transform .3s;}
+.timeline-item:hover .timeline-dot{transform:scale(1.3);}
+.timeline-label{font-size:12px;font-family:'DM Sans',sans-serif;color:var(--text-muted);letter-spacing:.1em;margin-bottom:8px;font-weight:500;}
+.timeline-title{font-size:20px;font-weight:600;color:var(--text);margin-bottom:10px;}
+.timeline-body{font-size:14px;color:var(--text);line-height:1.9;}
+.exp-title{font-size:17px;font-weight:600;color:var(--text);margin-bottom:4px;}
+.exp-body{font-size:13px;color:var(--text-muted);margin-bottom:4px;}
+.badge-active{display:inline-block;font-size:11px;font-weight:600;color:var(--accent);background:rgba(61,90,153,.08);padding:3px 10px;border-radius:4px;margin-top:6px;}
+.badge-gpa{font-size:13px;font-weight:600;color:var(--accent);margin-top:4px;}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.project-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease);}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(26,45,90,.12);}
+.project-card-top{padding:28px 28px 0;}.project-card-bottom{padding:0 28px 28px;}
+.project-number{font-family:'DM Sans',sans-serif;font-size:48px;font-weight:700;color:rgba(26,45,90,.06);line-height:1;margin-bottom:12px;}
+.project-header{margin-bottom:16px;}
+.project-year{font-size:12px;font-family:'DM Sans',sans-serif;color:var(--text-muted);margin-bottom:8px;font-weight:500;letter-spacing:.05em;}
+.project-name{font-size:19px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.project-org{font-size:13px;color:var(--text-muted);}
+.project-status{font-size:11px;font-weight:600;color:var(--accent);border:1px solid rgba(61,90,153,.2);background:rgba(61,90,153,.04);padding:4px 14px;border-radius:20px;white-space:nowrap;}
+.project-status.done{color:var(--text-muted);border-color:var(--border);background:transparent;}
+.project-desc{font-size:14px;color:var(--text);line-height:1.8;margin-bottom:16px;}
+.project-divider{height:1px;background:var(--border);margin:20px 0;}
+.tags{display:flex;gap:8px;flex-wrap:wrap;}
+.tag{font-size:11px;font-weight:600;color:var(--accent);background:rgba(61,90,153,.07);border:1px solid rgba(61,90,153,.12);padding:5px 14px;border-radius:20px;}
+
+/* SKILLS */
+.lang-item{margin-bottom:24px;}
+.lang-header{display:flex;justify-content:space-between;margin-bottom:8px;}
+.lang-name{font-size:15px;font-weight:500;color:var(--text);}
+.lang-level{font-size:13px;color:var(--text-muted);}
+.bar-track{background:rgba(26,45,90,.06);border-radius:4px;height:6px;margin-bottom:6px;overflow:hidden;}
+.bar-fill{height:6px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--accent));transition:width 1s var(--ease);}.bar-fill.dim{opacity:.35;}
+.tool-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;transition:border-color .2s;}
+.tool-card:hover{border-color:var(--blue-muted);}
+.tool-name{font-size:15px;font-weight:500;color:var(--text);}.tool-desc{font-size:13px;color:var(--text-muted);}
+.cert-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 24px;display:flex;align-items:center;margin-bottom:12px;transition:border-color .2s;}
+.cert-card:hover{border-color:var(--blue-muted);}
+.cert-name{font-size:15px;color:var(--text);}.cert-status{font-size:13px;color:var(--text-muted);margin-left:auto;}
+.cert-card.achieved{border-left:3px solid var(--accent);}.cert-card.achieved .cert-status{color:var(--accent);font-weight:600;}
+.cert-card.planned{opacity:.6;}
+
+/* FAQ */
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:28px;margin-bottom:16px;transition:border-color .2s;}
+.faq-item:hover{border-color:var(--blue-muted);}.faq-item:last-child{margin-bottom:0;}
+.faq-q{font-size:15px;font-weight:600;color:var(--text);margin-bottom:10px;display:flex;align-items:flex-start;gap:10px;}
+.faq-q::before{content:'Q';font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;color:#fff;background:var(--blue);border-radius:4px;padding:2px 7px;flex-shrink:0;margin-top:1px;}
+.faq-a{font-size:14px;color:var(--text);line-height:1.9;padding-left:30px;}
+
+/* CONTACT */
+.contact-cta{font-size:15px;color:var(--text);line-height:1.8;margin-bottom:48px;}
+.contact-grid{display:flex;gap:20px;flex-wrap:wrap;}
+.contact-card{flex:1;min-width:240px;display:flex;align-items:center;gap:16px;padding:24px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s;}
+.contact-card:hover{border-color:var(--blue-muted);transform:translateY(-3px);box-shadow:0 8px 24px rgba(26,45,90,.08);}
+.contact-card.dim{opacity:.45;pointer-events:none;}
+.contact-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-icon svg{width:22px;height:22px;}
+.contact-icon.ei{background:rgba(26,45,90,.08);}.contact-icon.ei svg{fill:none;stroke:var(--blue);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.contact-icon.ii{background:linear-gradient(135deg,rgba(228,64,95,.1),rgba(181,70,209,.1));}.contact-icon.ii svg{stroke:#c13584;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.ci-label{font-size:11px;font-family:'DM Sans',sans-serif;font-weight:600;color:var(--text-muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px;}
+.ci-value{font-size:15px;color:var(--text);font-weight:500;}
+
+/* BACK TO TOP */
+.btt{position:fixed;bottom:32px;right:32px;width:48px;height:48px;background:var(--blue);color:#fff;border:none;border-radius:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(26,45,90,.25);transition:all .3s var(--ease);opacity:0;pointer-events:none;z-index:90;}
+.btt.show{opacity:1;pointer-events:auto;}
+.btt:hover{background:var(--blue-light);transform:translateY(-3px);box-shadow:0 8px 24px rgba(26,45,90,.35);border-radius:14px;}
+.btt svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+footer{padding:40px 10%;text-align:center;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border);font-family:'DM Sans',sans-serif;}
+
+/* RESPONSIVE */
+.mobile-lang{display:none;padding:16px 0 4px;border-top:1px solid var(--border);margin-top:8px;}
+.mobile-lang .lang-btn{font-size:13px;padding:8px 20px;border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .2s;margin-right:8px;}
+.mobile-lang .lang-btn.active{background:var(--blue);color:#fff;border-color:var(--blue);}
+@media(max-width:768px){
+  header nav{padding:0 20px;}.nav-links,.lang-toggle,.nav-cta{display:none;}.hamburger{display:flex;}
+  .mobile-lang{display:flex;}
+  section{padding:72px 6%;}#home{padding:72px 6%;min-height:calc(100vh - var(--nav-height));min-height:100svh;}#introduction{min-height:60vh;padding:60px 6%;}
+  .h-nums{flex-wrap:wrap;gap:8px;}.h-low,.h-high{font-size:clamp(48px,14vw,100px);}.h-arr{font-size:clamp(32px,8vw,64px);}
+  .h-tagline{font-size:clamp(18px,5vw,28px);padding:16px 0 20px;}
+  .h-ghost-high{display:none;}
+  .about-top{flex-direction:column;align-items:flex-start;gap:32px;}.avatar{width:120px;height:120px;}.about-name{font-size:28px;}
+  .strength-row{flex-direction:column;gap:24px;padding:28px;text-align:center;}.str-icon{width:100%;height:120px;}.str-icon svg{width:80px;height:80px;}
+  .projects-grid{grid-template-columns:1fr;gap:16px;}
+  .timeline{padding-left:28px;}.timeline-dot{left:-28px;}
+  .tool-card{flex-direction:column;align-items:flex-start;gap:4px;}.contact-grid{flex-direction:column;}
+  .scroll-indicator{display:none;}.btt{bottom:72px;right:20px;width:44px;height:44px;border-radius:10px;}
+  .mobile-cta-bar{display:block;}
+  nav.mobile-menu{padding:20px 20px;}
+}
+@media(max-width:480px){.sec-heading{font-size:24px;}.timeline-title{font-size:17px;}.project-name{font-size:17px;}.intro-heading{font-size:28px;}.h-gpa{font-size:18px;letter-spacing:.3em;}.h-btn{padding:12px 32px;font-size:9px;}}</style>
+</head>
+<body>
+<header><nav>
+  <a href="#home" class="nav-logo">邱澤</a>
+  <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#faq">More</a></li></ul>
+  <div class="nav-right">
+    <div class="lang-toggle"><button class="lang-btn active" onclick="setLang('ja',this)">JP</button><button class="lang-btn" onclick="setLang('en',this)">EN</button></div>
+    <a href="#contact" class="nav-cta" data-ja='<svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>お問い合わせ' data-en='<svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact'><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>お問い合わせ</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav></header>
+<nav class="mobile-menu" id="mm" aria-label="モバイルメニュー">
+  <a href="#about" onclick="toggleMenu()">About</a><a href="#experience" onclick="toggleMenu()">Experience</a><a href="#projects" onclick="toggleMenu()">Projects</a><a href="#skills" onclick="toggleMenu()">Skills</a><a href="#faq" onclick="toggleMenu()">More</a><a href="#contact" onclick="toggleMenu()" data-ja="Contact" data-en="Contact">Contact</a>
+  <div class="mobile-lang"><button class="lang-btn active" onclick="setLang('ja',this)">JP</button><button class="lang-btn" onclick="setLang('en',this)">EN</button></div>
+</nav>
+<main>
+
+<!-- HOME -->
+<section id="home">
+  <span class="h-ghost-high" id="ghostHigh">3.50</span>
+  <div class="home-inner">
+    <div class="h-gpa">GPA</div>
+    <div class="h-nums" id="mainNums">
+      <span class="h-low">1.49</span>
+      <span class="h-arr">→</span>
+      <span class="h-high">3.50</span>
+    </div>
+    <p class="h-tagline" data-ja="変化を、数字で証明する。" data-en="Change, proven by numbers.">変化を、数字で証明する。</p>
+    <div class="h-footer">
+      <a href="#introduction" class="h-btn-circle" aria-label="はじめにへ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+      <span class="h-btn-label" data-ja="はじめに" data-en="Introduction">はじめに</span>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="introduction" style="background:var(--bg-alt);">
+  <span class="sec-heading-en fi">Introduction</span>
+  <h2 class="intro-heading fi" data-ja="はじめに" data-en="Introduction">はじめに</h2>
+  <div class="intro-divider fi fi-d1"></div>
+  <p class="intro-text fi fi-d2" data-ja="これまでの過程で、たくさんの経験を積んできました。<br>でも、これまでの自分を見つめ直しながら、まだまだ変わり続ける必要がある。<br>そう思い、このポートフォリオの制作に挑みました。" data-en="Throughout my journey, I have accumulated many experiences.<br>Yet reflecting on who I was, I knew I still needed to keep growing.<br>That conviction led me to create this portfolio.">これまでの過程で、たくさんの経験を積んできました。<br>でも、これまでの自分を見つめ直しながら、まだまだ変わり続ける必要がある。<br>そう思い、このポートフォリオの制作に挑みました。</p>
+  <p class="intro-future fi fi-d3" data-ja="AIを活用したウェブマーケティング職を目指しています。<br>データと創造性を掛け合わせた戦略を作れる人材になるための、第一歩です。" data-en="I am aiming for a web marketing career that leverages AI.<br>This portfolio is the first step toward becoming someone who can blend data with creativity.">AIを活用したウェブマーケティング職を目指しています。<br>データと創造性を掛け合わせた戦略を作れる人材になるための、第一歩です。</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <span class="sec-heading-en fi">About Me</span>
+  <h2 class="sec-heading fi" data-ja="自己紹介" data-en="About Me">自己紹介</h2>
+  <div class="sec-divider fi"></div>
+  <div class="about-top">
+    <div class="avatar fi"><img src="profile.jpg" alt="邱澤" onerror="this.style.display='none';this.parentElement.textContent='邱';"></div>
+    <div>
+      <h2 class="about-name fi">邱 澤</h2>
+      <p class="about-yomi fi">きゅうたく ／ Qiu Ze</p>
+      <p class="about-text fi" data-ja="2005年4月21日生まれ、東京出身・在住。国籍は中国。<br>日本生まれ日本育ちで、家庭内も日本語が中心だったため、中国語はほとんど話せない状態でスタートした。<br>拓殖大学 外国語学部中国語学科 在学中（2028年3月卒業予定）。<br>目上の方と話す機会が多く、自然とコミュニケーション力が身についた。<br>筋トレ・カラオケ・ボウリングが趣味。友人とご飯や買い物に出かけるのも好き。<br>WEBマーケティング / WEBデザインの分野を目指している。" data-en="Born April 21, 2005 — raised and based in Tokyo, Chinese nationality.<br>Despite having Chinese parents, I grew up in Japan speaking Japanese at home, so I started out barely able to speak Chinese at all.<br>Currently studying Chinese Language at Takushoku University (expected graduation March 2028).<br>Frequent interaction with seniors naturally honed my communication skills.<br>Hobbies: strength training, karaoke, and bowling. I also love going out for food and shopping with friends.<br>Aiming for a career in WEB marketing / WEB design.">2005年4月21日生まれ、東京出身・在住。国籍は中国。<br>日本生まれ日本育ちで、家庭内も日本語が中心だったため、中国語はほとんど話せない状態でスタートした。<br>拓殖大学 外国語学部中国語学科 在学中（2028年3月卒業予定）。<br>目上の方と話す機会が多く、自然とコミュニケーション力が身についた。<br>筋トレ・カラオケ・ボウリングが趣味。友人とご飯や買い物に出かけるのも好き。<br>WEBマーケティング / WEBデザインの分野を目指している。</p>
+    </div>
+  </div>
+
+  <span class="sub-heading-en fi">My Story</span>
+  <h3 class="sub-heading fi" data-ja="ストーリー" data-en="My Story">ストーリー</h3>
+  <div class="sub-divider fi"></div>
+  <div class="timeline">
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="幼少期" data-en="Childhood">幼少期</p><p class="timeline-title" data-ja="二つの文化の間で育つ" data-en="Growing Up Between Two Cultures">二つの文化の間で育つ</p><p class="timeline-body" data-ja="両親はともに中国人だが、日本生まれ日本育ちで家庭内も日本語が中心。そのため中国語はほとんど話せない状態だった。「中国人なのに中国語が話せない」というギャップが、のちに留学を決意するきっかけになった。" data-en="Both parents are Chinese, but I was born and raised in Japan with Japanese as the main language at home — so I could barely speak Chinese at all. That gap of being 'Chinese yet unable to speak Chinese' is what eventually pushed me to study abroad.">両親はともに中国人だが、日本生まれ日本育ちで家庭内も日本語が中心。そのため中国語はほとんど話せない状態だった。「中国人なのに中国語が話せない」というギャップが、のちに留学を決意するきっかけになった。</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="中学2年生" data-en="2nd Year of Junior High">中学2年生</p><p class="timeline-title" data-ja="嵩山少林寺塔溝武術学校へ4ヶ月留学" data-en="4 Months at Shaolin Tagou Martial Arts School">嵩山少林寺塔溝武術学校へ4ヶ月留学</p><p class="timeline-body" data-ja="中国・河南省登封市にある嵩山少林寺塔溝武術学校に4ヶ月間単身留学。少林寺からわずか500mに位置する中国最大級の武術学校で、言葉も文化も違う環境に飛び込んだ。そこで出会った中国語と人々が、進学の原点になった。" data-en="I went alone to study for 4 months at Shaolin Tagou Martial Arts School in Dengfeng, Henan, China — one of the country's largest martial arts schools, located just 500m from the Shaolin Temple itself. I dove into an environment with a different language and culture. The people and Chinese language I encountered there became the foundation of my academic path.">中国・河南省登封市にある嵩山少林寺塔溝武術学校に4ヶ月間単身留学。少林寺からわずか500mに位置する中国最大級の武術学校で、言葉も文化も違う環境に飛び込んだ。そこで出会った中国語と人々が、進学の原点になった。</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="大学入学後" data-en="After Starting University">大学入学後</p><p class="timeline-title" data-ja="自立という選択" data-en="Choosing Independence">自立という選択</p><p class="timeline-body" data-ja="大学入学を機に、食費・交通費・日々の出費をすべて自分で賄うようになった。始めたバイトは一つもやめず掛け持ちを続け、最高月収21万円を達成。お金と本気で向き合う中で、投資にも興味を持ち始めた。" data-en="When I entered university, I started covering all my food, transport, and daily expenses on my own. I never quit a single job — I kept stacking them and hit a peak monthly income of ¥210,000. Confronting money head-on sparked my interest in investing.">大学入学を機に、食費・交通費・日々の出費をすべて自分で賄うようになった。始めたバイトは一つもやめず掛け持ちを続け、最高月収21万円を達成。お金と本気で向き合う中で、投資にも興味を持ち始めた。</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="大学1〜2年" data-en="University Year 1–2">大学1〜2年</p><p class="timeline-title" data-ja="Illustratorで仕事をする" data-en="Working with Illustrator">Illustratorで仕事をする</p><p class="timeline-body" data-ja='<a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>でアイキャッチ画像の制作を担当。独学でIllustratorを習得し、8枚の制作実績を積んだ。' data-en='Took on thumbnail design at <a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>. Self-taught Illustrator and built a portfolio of 8 completed pieces.'><a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>でアイキャッチ画像の制作を担当。独学でIllustratorを習得し、8枚の制作実績を積んだ。</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="大学1年前期 → 2年後期" data-en="Year 1 Sem. 1 → Year 2 Sem. 2">大学1年前期 → 2年後期</p><p class="timeline-title" data-ja="GPA 1.49 → 3.50" data-en="GPA 1.49 → 3.50">GPA 1.49 → 3.50</p><p class="timeline-body" data-ja="変わることを選び、2年からは授業を一度も休まず課題に本気で向き合った。2年後期には3.50まで改善。" data-en="I chose to change. From year 2 I never missed a class and tackled every assignment seriously. My GPA climbed to 3.50 by the second semester.">変わることを選び、2年からは授業を一度も休まず課題に本気で向き合った。2年後期には3.50まで改善。</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="大学2年" data-en="University Year 2">大学2年</p><p class="timeline-title" data-ja="バイトからインターンへ" data-en="From Part-Time to Internship">バイトからインターンへ</p><p class="timeline-body" data-ja='ウェブマーケティングインターンとして<a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">株式会社三通</a>に参加。実務の世界に足を踏み入れた。' data-en='Joined <a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Sanntsu Co., Ltd.</a> as a web marketing intern and stepped into the professional world.'>ウェブマーケティングインターンとして<a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">株式会社三通</a>に参加。実務の世界に足を踏み入れた。</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="現在" data-en="Now">現在</p><p class="timeline-title" data-ja="ポートフォリオ制作中" data-en="Building This Portfolio">ポートフォリオ制作中</p><p class="timeline-body" data-ja="就活・スキルアップを目的に、このポートフォリオをゼロから制作中。" data-en="Creating this portfolio from scratch for job hunting and skill development.">就活・スキルアップを目的に、このポートフォリオをゼロから制作中。</p></div>
+  </div>
+
+  <div style="margin-top:80px;">
+    <span class="sub-heading-en fi">Strengths</span>
+    <h3 class="sub-heading fi" data-ja="強み" data-en="Strengths">強み</h3>
+    <div class="sub-divider fi"></div>
+    <div class="strength-row fi">
+      <div class="str-icon"><svg viewBox="0 0 100 100" fill="none"><circle cx="32" cy="32" r="15" stroke="#1a2d5a" stroke-width="2.5" fill="rgba(26,45,90,.08)"/><circle cx="68" cy="32" r="15" stroke="#3d5a99" stroke-width="2.5" fill="rgba(61,90,153,.08)"/><path d="M32 52c-12 0-20 6-20 13v4h40v-4c0-7-8-13-20-13z" fill="rgba(26,45,90,.1)" stroke="#1a2d5a" stroke-width="2"/><path d="M68 52c-12 0-20 6-20 13v4h40v-4c0-7-8-13-20-13z" fill="rgba(61,90,153,.1)" stroke="#3d5a99" stroke-width="2"/><text x="32" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#1a2d5a" font-family="DM Sans,sans-serif">JP</text><text x="68" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#3d5a99" font-family="DM Sans,sans-serif">CN</text></svg></div>
+      <div class="str-body"><p class="str-title" data-ja="日中バイリンガル" data-en="Japanese–Chinese Bilingual">日中バイリンガル</p><p class="str-desc" data-ja="両親中国人・少林寺武術留学の経験を持つ。日本語ネイティブ＋中国語リスニング対応可能。二つの文化を理解し、異なる価値観をつなげるコミュニケーションが得意。" data-en="Chinese parents and a Shaolin martial arts exchange experience. Native Japanese with Chinese listening ability. Skilled at bridging different cultures and connecting diverse perspectives.">両親中国人・少林寺武術留学の経験を持つ。日本語ネイティブ＋中国語リスニング対応可能。二つの文化を理解し、異なる価値観をつなげるコミュニケーションが得意。</p></div>
+    </div>
+    <div class="strength-row fi fi-d1">
+      <div class="str-icon"><svg viewBox="0 0 100 100" fill="none"><path d="M15 75L30 58L50 45L70 30L85 18" stroke="#1a2d5a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="75" r="5" fill="rgba(184,200,224,.6)" stroke="#b8c8e0" stroke-width="2"/><circle cx="85" cy="18" r="6" fill="rgba(26,45,90,.15)" stroke="#1a2d5a" stroke-width="2.5"/><line x1="15" y1="82" x2="85" y2="82" stroke="rgba(26,45,90,.08)" stroke-width="1.5"/><text x="10" y="94" font-size="10" font-weight="600" fill="#b8c8e0" font-family="DM Sans,sans-serif">1.49</text><text x="70" y="94" font-size="10" font-weight="700" fill="#1a2d5a" font-family="DM Sans,sans-serif">3.50</text><path d="M78 20l7-3M82 24l3-8" stroke="#3d5a99" stroke-width="2" stroke-linecap="round" opacity=".5"/></svg></div>
+      <div class="str-body"><p class="str-title" data-ja="成長力" data-en="Growth Mindset">成長力</p><p class="str-desc" data-ja="GPA 1.49→3.50。一度転んでも必ず立ち上がる。授業を一度も休まず課題に本気で向き合い続けた結果を、数字で証明した。" data-en="GPA 1.49 → 3.50. No matter how many times I fall, I get back up. Never missing a class and giving my all to every assignment — proven by the numbers.">GPA 1.49→3.50。一度転んでも必ず立ち上がる。授業を一度も休まず課題に本気で向き合い続けた結果を、数字で証明した。</p></div>
+    </div>
+    <div class="strength-row fi fi-d2">
+      <div class="str-icon"><svg viewBox="0 0 100 100" fill="none"><rect x="8" y="24" width="38" height="50" rx="4" stroke="#1a2d5a" stroke-width="2.5" fill="rgba(26,45,90,.05)"/><circle cx="27" cy="40" r="8" stroke="#1a2d5a" stroke-width="2" fill="rgba(26,45,90,.07)"/><path d="M14 58h26M14 63h18" stroke="#1a2d5a" stroke-width="1.5" stroke-linecap="round" opacity=".3"/><rect x="54" y="16" width="38" height="50" rx="4" stroke="#3d5a99" stroke-width="2.5" fill="rgba(61,90,153,.05)"/><path d="M62 30h22M62 37h16M62 44h20" stroke="#3d5a99" stroke-width="1.5" stroke-linecap="round" opacity=".4"/><path d="M62 52l5 4 12-12" stroke="#3d5a99" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="73" cy="78" r="11" fill="rgba(61,90,153,.1)" stroke="#3d5a99" stroke-width="2.5"/><path d="M69 78l3 3 6-6" stroke="#3d5a99" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="str-body"><p class="str-title" data-ja="デザイン × マーケティング" data-en="Design × Marketing">デザイン × マーケティング</p><p class="str-desc" data-ja="Illustratorでアイキャッチ画像の制作実績を積み、WEBマーケティングインターンでは実務を経験。クリエイティブとビジネスの両面からアプローチできる。" data-en="Built a track record creating thumbnail images with Illustrator and gained hands-on experience in a web marketing internship. I can approach projects from both the creative and business sides.">Illustratorでアイキャッチ画像の制作実績を積み、WEBマーケティングインターンでは実務を経験。クリエイティブとビジネスの両面からアプローチできる。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background:var(--bg-alt);">
+  <span class="sec-heading-en fi">Experience</span>
+  <h2 class="sec-heading fi" data-ja="経歴" data-en="Experience">経歴</h2>
+  <div class="sec-divider fi"></div>
+  <span class="sub-heading-en fi">Education</span><h3 class="sub-heading fi" data-ja="学歴" data-en="Education">学歴</h3><div class="sub-divider fi"></div>
+  <div class="timeline" style="margin-bottom:60px;">
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2018 卒業 / 私立" data-en="Graduated 2018 / Private">2018 卒業 / 私立</p><p class="exp-title" data-ja="淑徳小学校" data-en="Shukutoku Elementary School">淑徳小学校</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2024 卒業 / 私立" data-en="Graduated 2024 / Private">2024 卒業 / 私立</p><p class="exp-title" data-ja="巣鴨中学校・高等学校（中高一貫）" data-en="Sugamo Junior &amp; Senior High School (Combined)">巣鴨中学校・高等学校（中高一貫）</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2024〜 現在" data-en="2024 – Present">2024〜 現在</p><p class="exp-title" data-ja="拓殖大学 外国語学部中国語学科" data-en="Takushoku University, Dept. of Chinese Language">拓殖大学 外国語学部中国語学科</p><p class="exp-body" data-ja="在学中" data-en="Currently enrolled">在学中</p><p class="badge-gpa" data-ja="GPA 3.50（1年前期 1.49 から改善）" data-en="GPA 3.50 (improved from 1.49 in Year 1, Sem. 1)">GPA 3.50（1年前期 1.49 から改善）</p></div>
+  </div>
+  <span class="sub-heading-en fi">Work</span><h3 class="sub-heading fi" data-ja="職歴" data-en="Work Experience">職歴</h3><div class="sub-divider fi"></div>
+  <div class="timeline">
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2024〜" data-en="2024–">2024〜</p><p class="exp-title" data-ja="スーパーマーケット ライフ｜レジスタッフ" data-en="Supermarket Life | Cashier Staff">スーパーマーケット ライフ｜レジスタッフ</p><p class="exp-body" data-ja="接客・レジ業務を通じてホスピタリティを学んだ" data-en="Developed hospitality skills through customer service and register operations">接客・レジ業務を通じてホスピタリティを学んだ</p><span class="badge-active" data-ja="進行中" data-en="Ongoing">進行中</span></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2025" data-en="2025">2025</p><p class="exp-title" data-ja='<a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>｜サムネイルデザイナー' data-en='<a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a> | Thumbnail Designer'><a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>｜サムネイルデザイナー</p><p class="exp-body" data-ja="Illustratorを独学で習得。アイキャッチ画像を8枚制作" data-en="Self-taught Illustrator. Created 8 thumbnail images.">Illustratorを独学で習得。アイキャッチ画像を8枚制作</p></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2025〜" data-en="2025–">2025〜</p><p class="exp-title" data-ja='<a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>｜コールセンター' data-en='<a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a> | Call Center'><a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a>｜コールセンター</p><p class="exp-body" data-ja="大手メディアグループ依頼の世論調査・千葉県警察詐欺被害注意喚起の電話対応" data-en="Handled public opinion surveys commissioned by a major media group and fraud-prevention outreach calls for the Chiba Prefectural Police.">大手メディアグループ依頼の世論調査・千葉県警察詐欺被害注意喚起の電話対応</p><span class="badge-active" data-ja="進行中" data-en="Ongoing">進行中</span></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2026.02〜" data-en="Feb 2026–">2026.02〜</p><p class="exp-title" data-ja="飲食店｜接客スタッフ" data-en="Restaurant | Service Staff">飲食店｜接客スタッフ</p><p class="exp-body" data-ja="多様な年齢層のお客様との対話を通じて、傾聴力と臨機応変な対応力を磨いている" data-en="Refining active listening and adaptive response skills through interactions with customers of all ages.">多様な年齢層のお客様との対話を通じて、傾聴力と臨機応変な対応力を磨いている</p><span class="badge-active" data-ja="進行中" data-en="Ongoing">進行中</span></div>
+    <div class="timeline-item fi"><div class="timeline-dot"></div><p class="timeline-label" data-ja="2026.03〜" data-en="Mar 2026–">2026.03〜</p><p class="exp-title" data-ja='<a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">株式会社三通</a>｜ウェブマーケティングインターン' data-en='<a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Sanntsu Co., Ltd.</a> | Web Marketing Intern'><a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">株式会社三通</a>｜ウェブマーケティングインターン</p><span class="badge-active" data-ja="進行中" data-en="Ongoing">進行中</span></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <span class="sec-heading-en fi">Projects</span>
+  <h2 class="sec-heading fi" data-ja="プロジェクト" data-en="Projects">プロジェクト</h2>
+  <div class="sec-divider fi"></div>
+  <div class="projects-grid">
+    <div class="project-card fi"><div class="project-card-top"><p class="project-number">01</p><div class="project-header"><p class="project-year">2025</p><p class="project-name" data-ja="アイキャッチ画像制作" data-en="Thumbnail Image Design">アイキャッチ画像制作</p><p class="project-org"><a href="https://ascend-corp.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Ascend Corporation</a></p></div><p class="project-desc" data-ja="Illustratorを独学で習得し、会社のメディア向けアイキャッチ画像を8枚制作。" data-en="Self-taught Illustrator and created 8 thumbnail images for the company's media channels.">Illustratorを独学で習得し、会社のメディア向けアイキャッチ画像を8枚制作。</p></div><div class="project-divider" style="margin:0 28px;"></div><div class="project-card-bottom" style="padding-top:20px;"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;"><div class="tags"><span class="tag">Adobe Illustrator</span><span class="tag" data-ja="デザイン" data-en="Design">デザイン</span></div><span class="project-status" data-ja="掲載許可確認中" data-en="Awaiting Permission">掲載許可確認中</span></div></div></div>
+    <div class="project-card fi fi-d1"><div class="project-card-top"><p class="project-number">02</p><div class="project-header"><p class="project-year">2026〜</p><p class="project-name" data-ja="ポートフォリオサイト制作" data-en="Portfolio Website">ポートフォリオサイト制作</p><p class="project-org" data-ja="個人制作" data-en="Personal Project">個人制作</p></div><p class="project-desc" data-ja="就活・スキルアップを目的にゼロから制作中。JP/EN対応・レスポンシブデザインを実装。" data-en="Built from scratch for job hunting and skill development. Implemented JP/EN switching and responsive design.">就活・スキルアップを目的にゼロから制作中。JP/EN対応・レスポンシブデザインを実装。</p></div><div class="project-divider" style="margin:0 28px;"></div><div class="project-card-bottom" style="padding-top:20px;"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;"><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><span class="project-status" data-ja="制作中" data-en="In Progress">制作中</span></div></div></div>
+    <div class="project-card fi fi-d2"><div class="project-card-top"><p class="project-number">03</p><div class="project-header"><p class="project-year">2025</p><p class="project-name">How to spot a liar</p><p class="project-org" data-ja="拓殖大学 授業プレゼン" data-en="Takushoku University – Class Presentation">拓殖大学 授業プレゼン</p></div><p class="project-desc" data-ja="TEDトークを参考に制作した日英バイリンガルプレゼン。21枚構成。" data-en="A Japanese–English bilingual presentation inspired by a TED Talk. 21 slides.">TEDトークを参考に制作した日英バイリンガルプレゼン。21枚構成。</p></div><div class="project-divider" style="margin:0 28px;"></div><div class="project-card-bottom" style="padding-top:20px;"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;"><div class="tags"><span class="tag">PowerPoint</span><span class="tag" data-ja="日英バイリンガル" data-en="JP–EN Bilingual">日英バイリンガル</span></div><span class="project-status done" data-ja="完了" data-en="Completed">完了</span></div></div></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--bg-alt);">
+  <span class="sec-heading-en fi">Skills</span><h2 class="sec-heading fi" data-ja="スキル" data-en="Skills">スキル</h2><div class="sec-divider fi"></div>
+  <span class="sub-heading-en fi">Languages</span><h3 class="sub-heading fi" data-ja="言語" data-en="Languages">言語</h3><div class="sub-divider fi"></div>
+  <div style="margin-bottom:60px;">
+    <div class="lang-item fi"><div class="lang-header"><span class="lang-name" data-ja="日本語" data-en="Japanese">日本語</span><span class="lang-level" data-ja="ネイティブ" data-en="Native">ネイティブ</span></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
+    <div class="lang-item fi"><div class="lang-header"><span class="lang-name" data-ja="中国語" data-en="Chinese">中国語</span><span class="lang-level" data-ja="リスニング◎ / スピーキング△" data-en="Listening ◎ / Speaking △">リスニング◎ / スピーキング△</span></div><div class="bar-track"><div class="bar-fill" style="width:70%;"></div></div><div class="bar-track"><div class="bar-fill dim" style="width:35%;"></div></div></div>
+    <div class="lang-item fi"><div class="lang-header"><span class="lang-name" data-ja="英語" data-en="English">英語</span><span class="lang-level" data-ja="英検準2級取得済み" data-en="EIKEN Pre-2nd Grade">英検準2級取得済み</span></div><div class="bar-track"><div class="bar-fill" style="width:40%;"></div></div></div>
+  </div>
+  <span class="sub-heading-en fi">Tools</span><h3 class="sub-heading fi" data-ja="ツール" data-en="Tools">ツール</h3><div class="sub-divider fi"></div>
+  <div style="margin-bottom:60px;">
+    <div class="tool-card fi"><span class="tool-name">Adobe Illustrator</span><span class="tool-desc" data-ja="アイキャッチ8枚制作で習得" data-en="Acquired through creating 8 thumbnail images">アイキャッチ8枚制作で習得</span></div>
+    <div class="tool-card fi"><span class="tool-name">PowerPoint</span><span class="tool-desc" data-ja="大学プレゼン制作で習得" data-en="Acquired through university presentation work">大学プレゼン制作で習得</span></div>
+  </div>
+  <span class="sub-heading-en fi">Certifications</span><h3 class="sub-heading fi" data-ja="資格" data-en="Certifications">資格</h3><div class="sub-divider fi"></div>
+  <div>
+    <div class="cert-card achieved fi"><span class="cert-name" data-ja="英検準2級" data-en="EIKEN Pre-2nd Grade">英検準2級</span><span class="cert-status" data-ja="取得済み ✓" data-en="Obtained ✓">取得済み ✓</span></div>
+    <div class="cert-card planned fi"><span class="cert-name">HSK</span><span class="cert-status" data-ja="受験予定" data-en="Planned">受験予定</span></div>
+    <div class="cert-card planned fi"><span class="cert-name" data-ja="簿記3級" data-en="Bookkeeping Level 3">簿記3級</span><span class="cert-status" data-ja="取得予定" data-en="Planned">取得予定</span></div>
+    <div class="cert-card planned fi"><span class="cert-name" data-ja="FP3級" data-en="CFP Level 3">FP3級</span><span class="cert-status" data-ja="取得予定" data-en="Planned">取得予定</span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <span class="sec-heading-en fi">A Little More About Me</span><h2 class="sec-heading fi" data-ja="自分について、もう少し" data-en="A Little More About Me">自分について、もう少し</h2><div class="sec-divider fi"></div>
+  <div class="faq-item fi"><p class="faq-q" data-ja="なぜWEBマーケティングを目指しているのですか？" data-en="Why are you aiming for web marketing?">なぜWEBマーケティングを目指しているのですか？</p><p class="faq-a" data-ja='Illustratorでアイキャッチ画像を制作した経験から、デザインが人の行動に影響を与えることに面白さを感じました。<a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">株式会社三通</a>のインターンでクラウドサービス系の業務に触れたことで、IT・クラウド業界でAIを活用したマーケティング戦略を作れる人材を目指すようになりました。' data-en='Creating thumbnail images with Illustrator showed me how design shapes human behavior — I found that fascinating. My internship at <a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Sanntsu Co., Ltd.</a> exposed me to cloud services, which led me to aim for a career building AI-powered marketing strategies in the IT and cloud industry.'>Illustratorでアイキャッチ画像を制作した経験から、デザインが人の行動に影響を与えることに面白さを感じました。<a href="https://sanntsu.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">株式会社三通</a>のインターンでクラウドサービス系の業務に触れたことで、IT・クラウド業界でAIを活用したマーケティング戦略を作れる人材を目指すようになりました。</p></div>
+  <div class="faq-item fi"><p class="faq-q" data-ja="中国語はどのくらい話せますか？" data-en="How well do you speak Chinese?">中国語はどのくらい話せますか？</p><p class="faq-a" data-ja="両親が中国人で、中学2年時に河南省の少林寺武術学校に4ヶ月間留学した経験があります。リスニングは日常会話レベルで対応可能ですが、スピーキングは現在も学習中です。今年中にHSK取得を目指しています。" data-en="Both of my parents are Chinese, and I spent 4 months at Shaolin Martial Arts School in Henan Province in junior high school. My listening is at an everyday conversational level, while I am still improving my speaking. I am aiming to earn my HSK certification this year.">両親が中国人で、中学2年時に河南省の少林寺武術学校に4ヶ月間留学した経験があります。リスニングは日常会話レベルで対応可能ですが、スピーキングは現在も学習中です。今年中にHSK取得を目指しています。</p></div>
+  <div class="faq-item fi"><p class="faq-q" data-ja="将来どんなキャリアを描いていますか？" data-en="What career path are you envisioning?">将来どんなキャリアを描いていますか？</p><p class="faq-a" data-ja="まずはWEBマーケティングの実務経験を積み、データ分析とクリエイティブの両方を扱えるマーケターになりたいと考えています。将来的にはバイリンガルの強みを活かして、日中をまたいだデジタルマーケティングの領域で活躍したいです。" data-en="My first goal is to build hands-on web marketing experience and become a marketer who handles both data analysis and creative work. Long-term, I want to leverage my bilingual skills and make an impact in digital marketing spanning Japan and China.">まずはWEBマーケティングの実務経験を積み、データ分析とクリエイティブの両方を扱えるマーケターになりたいと考えています。将来的にはバイリンガルの強みを活かして、日中をまたいだデジタルマーケティングの領域で活躍したいです。</p></div>
+  <div class="faq-item fi"><p class="faq-q" data-ja="チームで働くときの強みは？" data-en="What is your strength when working in a team?">チームで働くときの強みは？</p><p class="faq-a" data-ja="幼少期から目上の方と話す機会が多く、年齢や立場を問わずコミュニケーションが取れることが強みです。バーやコールセンターの経験を通じて、相手の意図を汲み取る力も身につきました。" data-en="From a young age I often spoke with people older than me, so communicating across age groups and roles comes naturally. Through bar and call center work I also developed the ability to read what people really mean.">幼少期から目上の方と話す機会が多く、年齢や立場を問わずコミュニケーションが取れることが強みです。バーやコールセンターの経験を通じて、相手の意図を汲み取る力も身につきました。</p></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg-alt);">
+  <span class="sec-heading-en fi">Contact</span><h2 class="sec-heading fi" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h2><div class="sec-divider fi"></div>
+  <p class="contact-cta fi" data-ja="就活・お仕事・何でもお気軽にご連絡ください。" data-en="Feel free to reach out for job opportunities, work inquiries, or anything else.">就活・お仕事・何でもお気軽にご連絡ください。</p>
+  <div class="contact-grid">
+    <a href="mailto:ryuutaku7@gmail.com" class="contact-card fi"><div class="contact-icon ei"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg></div><div><p class="ci-label">Email</p><p class="ci-value">ryuutaku7@gmail.com</p></div></a>
+    <div class="contact-card dim fi fi-d1"><div class="contact-icon ii"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#c13584" stroke="none"/></svg></div><div><p class="ci-label">Instagram</p><p class="ci-value" data-ja="準備中" data-en="Coming Soon">準備中</p></div></div>
+  </div>
+</section>
+
+</main>
+
+<button class="btt" id="btt" aria-label="ページトップへ戻る"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+<div class="mobile-cta-bar" id="mCta"><a href="#contact" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></div>
+<footer><p>&copy; <span id="yr"></span> 邱澤（Qiu Ze）. All rights reserved.</p></footer>
+
+<script>
+// Ghost 3.50 animation (desktop only)
+window.addEventListener('load', () => {
+  if (window.innerWidth <= 768) return;
+  const mainHigh = document.querySelector('.h-high');
+  const tagline  = document.querySelector('.h-tagline');
+  const ghost    = document.getElementById('ghostHigh');
+  const section  = document.getElementById('home');
+  if (!mainHigh || !tagline || !ghost || !section) return;
+  const sr = section.getBoundingClientRect();
+  const mr = mainHigh.getBoundingClientRect();
+  const tr = tagline.getBoundingClientRect();
+  const startLeft = mr.left - sr.left;
+  const startTop  = mr.top  - sr.top;
+  const dy = (tr.top - sr.top) - startTop;
+  const maxDx = sr.width - (startLeft + mr.width) - 24;
+  const dx = Math.min(120, maxDx);
+
+  // ゴーストアニメーション実行関数
+  function runGhost() {
+    // 今の位置からフェードアウトしてからリセット＆再生
+    ghost.style.transition = 'opacity 0.3s ease';
+    ghost.style.opacity    = '0';
+    setTimeout(() => {
+      ghost.style.transition = 'none';
+      ghost.style.transform  = 'translate(0,0)';
+      ghost.style.left = startLeft + 'px';
+      ghost.style.top  = startTop  + 'px';
+      void ghost.offsetWidth;
+      setTimeout(() => {
+        ghost.style.transition = 'opacity 0.4s ease';
+        ghost.style.opacity = '0.12';
+        requestAnimationFrame(() => { requestAnimationFrame(() => {
+          ghost.style.transition = 'transform 1.6s cubic-bezier(.22,1,.36,1), opacity 1.6s cubic-bezier(.22,1,.36,1)';
+          ghost.style.transform  = `translate(${dx}px, ${dy}px)`;
+          ghost.style.opacity    = '0.07';
+        });});
+      }, 600);
+    }, 300);
+  }
+
+  // 初回実行
+  runGhost();
+
+  // Homeから離れたらゴーストを即消す
+  const hideObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) {
+        ghost.style.transition = 'none';
+        ghost.style.opacity    = '0';
+      }
+    });
+  }, { threshold: 0.2 });
+  hideObs.observe(section);
+
+  // Homeに戻ったときにゴーストだけ再実行
+  let firstLoad = true;
+  const homeObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        if (firstLoad) { firstLoad = false; return; }
+        runGhost();
+      }
+    });
+  }, { threshold: 0.5 });
+  homeObs.observe(section);
+});
+
+function toggleMenu(){const m=document.getElementById('mm'),h=document.querySelector('.hamburger');m.classList.toggle('open');h.setAttribute('aria-expanded',m.classList.contains('open'));}
+function setLang(l,el){
+  document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',(l==='en'&&b.textContent.trim()==='EN')||(l==='ja'&&b.textContent.trim()==='JP'));});
+  document.documentElement.lang=l==='en'?'en':'ja';
+  document.querySelectorAll('[data-ja]').forEach(node=>{
+    const val=l==='en'?(node.getAttribute('data-en')||node.getAttribute('data-ja')):node.getAttribute('data-ja');
+    if(node.tagName==='INPUT'||node.tagName==='TEXTAREA'){node.placeholder=val;}
+    else{node.innerHTML=val;}
+  });
+  localStorage.setItem('lang',l);
+}
+(function(){const s=localStorage.getItem('lang');if(s==='en'){const btn=document.querySelector('.lang-btn:last-child');if(btn)setLang('en',btn);}})();
+const nav=document.querySelector('header nav'),secs=document.querySelectorAll('section[id]'),nL=document.querySelectorAll('.nav-links a'),btt=document.getElementById('btt'),mC=document.getElementById('mCta');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',scrollY>20);btt.classList.toggle('show',scrollY>400);
+  const c=document.getElementById('contact');if(c){const r=c.getBoundingClientRect();if(mC)mC.style.display=(r.top<innerHeight&&r.bottom>0)?'none':'';}
+  const sy=scrollY+100;secs.forEach(s=>{const t=s.offsetTop,h=s.offsetHeight,id=s.getAttribute('id');if(sy>=t&&sy<t+h){nL.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));}});
+});
+btt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.classList.add('v');
+  } else {
+    e.target.classList.remove('v');
+    void e.target.offsetWidth;
+  }
+});},{threshold:0.12});
+// Home section: replay CSS keyframe animations on re-entry
+const homeObs=new IntersectionObserver(es=>{es.forEach(e=>{
+  if(e.isIntersecting){
+    ['.h-gpa','.h-nums','.h-tagline','.h-footer'].forEach(sel=>{
+      const el=e.target.querySelector(sel);
+      if(!el)return;
+      el.style.animation='none';
+      void el.offsetWidth;
+      el.style.animation='';
+    });
+  }
+});},{threshold:0.1});
+const homeSection=document.getElementById('home');
+if(homeSection)homeObs.observe(homeSection);
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
