@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(rm \"C:\\\\Users\\\\zqiu9\\\\repos\\\\profilio\\\\portfolio_v7_4.html\")",
-      "Bash(cp \"C:\\\\Users\\\\zqiu9\\\\Downloads\\\\portfolio_vol-1.html\" \"C:\\\\Users\\\\zqiu9\\\\repos\\\\profilio\\\\index.html\")"
-    ]
-  }
-}
