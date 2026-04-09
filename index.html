@@ -366,7 +366,7 @@ details > div strong { color: var(--blue); font-weight: 700; }
 <body>
 <header><nav>
   <a href="#home" class="nav-logo">Kyu Taku</a>
-  <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#strengths">Strengths</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#faq">FAQ</a></li></ul>
+  <ul class="nav-links"><li><a href="#about" data-ja="自己紹介" data-en="About">About</a></li><li><a href="#strengths" data-ja="強み" data-en="Strengths">Strengths</a></li><li><a href="#experience" data-ja="経歴" data-en="Experience">Experience</a></li><li><a href="#projects" data-ja="プロジェクト" data-en="Projects">Projects</a></li><li><a href="#skills" data-ja="スキル" data-en="Skills">Skills</a></li><li><a href="#faq" data-ja="FAQ" data-en="FAQ">FAQ</a></li></ul>
   <div class="nav-right">
     <div class="lang-toggle"><button class="lang-btn active" onclick="setLang('ja',this)">JP</button><button class="lang-btn" onclick="setLang('en',this)">EN</button></div>
     <a href="#contact" class="nav-cta" data-ja='<svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>お問い合わせ' data-en='<svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact'><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>お問い合わせ</a>
@@ -404,14 +404,6 @@ details > div strong { color: var(--blue); font-weight: 700; }
   <h2 class="intro-heading fi" data-ja="はじめに" data-en="Introduction">はじめに</h2>
   <div class="intro-divider fi fi-d1"></div>
   <p class="intro-text fi fi-d2" data-ja="これまでの過程で、たくさんの経験を積んできました。<br>でも、これまでの自分を見つめ直しながら、まだまだ変わり続ける必要がある。<br>そう思い、このポートフォリオの制作に挑みました。" data-en="Throughout my journey, I have accumulated many experiences.<br>Yet reflecting on who I was, I knew I still needed to keep growing.<br>That conviction led me to create this portfolio.">これまでの過程で、たくさんの経験を積んできました。<br>でも、これまでの自分を見つめ直しながら、まだまだ変わり続ける必要がある。<br>そう思い、このポートフォリオの制作に挑みました。</p>
-  <nav class="intro-nav fi fi-d3" aria-label="セクションナビゲーション">
-    <a href="#about" class="intro-nav-item"><span data-ja="自己紹介" data-en="About">自己紹介</span><span class="intro-nav-arrow">→</span></a>
-    <a href="#strengths" class="intro-nav-item"><span data-ja="強み" data-en="Strengths">強み</span><span class="intro-nav-arrow">→</span></a>
-    <a href="#experience" class="intro-nav-item"><span data-ja="経歴" data-en="Experience">経歴</span><span class="intro-nav-arrow">→</span></a>
-    <a href="#projects" class="intro-nav-item"><span data-ja="プロジェクト" data-en="Projects">プロジェクト</span><span class="intro-nav-arrow">→</span></a>
-    <a href="#skills" class="intro-nav-item"><span data-ja="スキル" data-en="Skills">スキル</span><span class="intro-nav-arrow">→</span></a>
-    <a href="#faq" class="intro-nav-item"><span data-ja="FAQ" data-en="FAQ">FAQ</span><span class="intro-nav-arrow">→</span></a>
-  </nav>
 </section>
 
 <!-- ABOUT -->
@@ -689,7 +681,7 @@ function setLang(l,el){
   });
   localStorage.setItem('lang',l);
 }
-(function(){const s=localStorage.getItem('lang');if(s==='en'){const btn=document.querySelector('.lang-btn:last-child');if(btn)setLang('en',btn);}})();
+(function(){const s=localStorage.getItem('lang')||'ja';const btn=document.querySelector(s==='en'?'.lang-btn:last-child':'.lang-btn:first-child');if(btn)setLang(s,btn);})()
 const nav=document.querySelector('header nav'),secs=document.querySelectorAll('section[id]'),nL=document.querySelectorAll('.nav-links a'),btt=document.getElementById('btt'),mC=document.getElementById('mCta');
 window.addEventListener('scroll',()=>{
   nav.classList.toggle('scrolled',scrollY>20);btt.classList.toggle('show',scrollY>400);
